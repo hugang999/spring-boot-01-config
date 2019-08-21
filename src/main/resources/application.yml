@@ -1,0 +1,22 @@
+
+server:
+  port: 8081
+
+spring:
+  profiles:
+    #激活指定配置文件
+    active: prod
+
+---
+
+server:
+  port: 8082
+spring:
+  profiles: dev
+
+---
+
+server:
+  port: 883
+spring:
+  profiles: prod
